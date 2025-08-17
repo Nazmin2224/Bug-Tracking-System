@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.add-user-page {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #0f0f0f, #1a1a2e, #0f0f0f, #1f1f3a);
+  background-size: 400% 400%;
+  animation: gradientShift 12s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.glass-card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 500px;
+  width: 100%;
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+}
+
+.glass-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ff9500;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 200px;
+}
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 14px 12px;
+  
+  border: none;
+  border-radius: 8px;
+  color: #000000;
+  font-size: 1rem;
+}
+
+
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label,
+.form-group select:focus + label,
+.form-group select:not([value=""]) + label {
+  top: -10px;
+  left: 10px;
+  font-size: 0.8rem;
+  color: #ffd700;
+}
+
+
+

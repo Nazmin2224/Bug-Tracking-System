@@ -1,0 +1,67 @@
+.assigned-dev-page {
+  padding: 40px 20px;
+  min-height: 100vh;
+  background-color: #0f172a;
+  color: #f1f1f1;
+  font-family: 'Poppins', sans-serif;
+}
+
+.assigned-dev-page h2 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #38bdf8;
+}
+
+.project-table,
+.bug-table {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  border-collapse: collapse;
+  background: #1e293b;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+}
+
+.project-table thead,
+.bug-table thead {
+  background: #273549;
+}
+
+.project-table th,
+.project-table td,
+.bug-table th,
+.bug-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #334155;
+}
+
+.project-table th,
+.bug-table th {
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.project-table td,
+.bug-table td {
+  color: #f1f1f1;
+}
+
+.project-table tr:nth-child(even),
+.bug-table tr:nth-child(even) {
+  background: #1e293b;
+}
+
+.project-table tr:nth-child(odd),
+.bug-table tr:nth-child(odd) {
+  background: #273549;
+}
+
+.project-table tr:hover,
+.bug-table tr:hover {
+  background: #334155;
+}

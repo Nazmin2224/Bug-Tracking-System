@@ -1,0 +1,138 @@
+/* Layout */
+.signup-wrapper {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.signup-left {
+  flex: 1;
+  background: url('../assets/bgz.jpg') ;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.signup-left h1 {
+  font-size: 36px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.icon-circle {
+  font-size: 48px;
+  background: white;
+  color: #070924;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form Side */
+.signup-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  padding: 50px 30px;
+}
+
+.signup-form {
+  width: 100%;
+  max-width: 500px;
+}
+
+.signup-form h2 {
+  text-align: center;
+  color: #070536;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+input,
+select {
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  border-color: #a64bf4;
+}
+
+/* Terms */
+.terms {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 10px;
+  font-size: 13px;
+}
+
+.terms input {
+  margin-right: 8px;
+}
+
+.terms label a {
+  color: #180532;
+  text-decoration: none;
+}
+
+/* Button */
+.signup-btn {
+  width: 100%;
+  background: linear-gradient(to right, #05000a, #070547);
+  color: white;
+  padding: 12px;
+  font-size: 15px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.signup-btn:hover {
+  opacity: 0.9;
+}
+
+/* Sign In Link */
+.login-link {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .signup-wrapper {
+    flex-direction: column;
+  }
+
+  .signup-left {
+    display: none;
+  }
+
+  .signup-form {
+    padding: 0;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}

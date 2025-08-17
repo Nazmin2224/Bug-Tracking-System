@@ -1,0 +1,121 @@
+.view-users-page {
+  padding: 40px 20px;
+  min-height: 100vh;
+  background-color: #0f172a;
+  color: #f1f1f1;
+  font-family: 'Poppins', sans-serif;
+}
+
+.view-users-page h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #38bdf8;
+}
+
+.search-bar {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  padding: 8px 12px;
+  font-size: 1rem;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 5px;
+  border: 1px solid #38bdf8;
+  background: #273549;
+  color: #f1f1f1;
+}
+
+.users-table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: #1e293b;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+}
+
+.users-table thead {
+  background: #273549;
+}
+
+.users-table th,
+.users-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #334155;
+}
+
+/* Center ID column */
+.users-table th:nth-child(1),
+.users-table td:nth-child(1) {
+  text-align: center;
+}
+
+/* Widen actions column to fit buttons */
+.users-table th:last-child,
+.users-table td:last-child {
+  width: 160px;
+}
+
+/* Row styling */
+.users-table tr:nth-child(even) {
+  background: #1e293b;
+}
+
+.users-table tr:nth-child(odd) {
+  background: #273549;
+}
+
+.users-table tr:hover {
+  background: #334155;
+}
+
+.users-table td {
+  color: #f1f1f1;
+}
+
+/* Button container */
+.button-group {
+  display: flex;
+  gap: 8px;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Consistent buttons */
+.action-btn {
+  padding: 6px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  min-width: 70px;
+  white-space: nowrap;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+  background-color: #09d9fe;
+}
+
+.edit-btn:hover {
+  background-color: #02b0cf;
+}
+
+.delete-btn {
+  background-color: #f44336;
+}
+
+.delete-btn:hover {
+  background-color: #e53935;
+}

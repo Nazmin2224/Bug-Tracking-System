@@ -1,0 +1,108 @@
+/* src/pages/AdminDashboard.css */
+
+.admin-dashboard {
+  padding: 40px 20px;
+  color: #f1f1f1;
+  background-color: #0f172a; /* navy/black tone */
+  min-height: 100vh;
+  text-align: center;
+}
+
+.admin-dashboard h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #94a3b8;
+  margin-bottom: 40px;
+}
+
+.admin-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.admin-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 30px;
+  width: 250px;
+  text-align: left;
+  color: #f8fafc;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admin-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  background-color: #273549;
+}
+
+.admin-card h3 {
+  margin-bottom: 10px;
+  color: #38bdf8;
+}
+
+.admin-card p {
+  color: #cbd5e1;
+}
+
+/* 🔽 Register Section Styles */
+
+.admin-register-section {
+  margin-top: 60px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  border-radius: 12px;
+  background: #1e293b;
+  border: 1px solid #334155;
+  text-align: left;
+}
+
+.admin-register-section h3 {
+  color: #38bdf8;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.admin-register-section p {
+  color: #cbd5e1;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.admin-register-section form input,
+.admin-register-section form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  background-color: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  color: #f1f1f1;
+}
+
+.admin-register-section form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #38bdf8;
+  border: none;
+  border-radius: 8px;
+  color: #0f172a;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-register-section form button:hover {
+  background-color: #0ea5e9;
+}

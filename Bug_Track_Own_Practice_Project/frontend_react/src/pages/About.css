@@ -1,0 +1,25 @@
+.about-section {
+  background: rgb(5, 4, 53);
+  min-height: 100vh;
+  position: relative;
+}
+
+.about-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  min-height: 100vh;
+  padding: 4rem 1rem;
+}
+
+.feature-card {
+  background-color: #ffffff0d;
+  color: #fff;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}

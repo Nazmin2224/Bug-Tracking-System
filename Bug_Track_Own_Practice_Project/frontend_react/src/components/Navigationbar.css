@@ -1,0 +1,53 @@
+/* src/components/NavigationBar.css */
+
+.modern-navbar {
+  background: rgba(10, 10, 20, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  font-family: 'Poppins', sans-serif;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  transition: all 0.3s ease;
+  min-height: 56px; /* Bootstrap default is 70px-ish */
+}
+
+.modern-navbar .brand {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #ffd700 !important;
+  transition: transform 0.2s ease;
+}
+
+.modern-navbar .brand:hover {
+  transform: scale(1.05);
+}
+
+.nav-links .nav-link {
+  color: #f0f0f0 !important;
+  margin-left: 20px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  position: relative;
+  transition: all 0.3s ease;
+  padding: 0.3rem 0.6rem; /* Reduce padding */
+}
+
+.nav-links .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 2px;
+  width: 0%;
+  background: #ffd700;
+  transition: width 0.3s ease;
+}
+
+.nav-links .nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-links .nav-link:hover {
+  color: #ffd700 !important;
+}
