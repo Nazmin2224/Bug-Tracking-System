@@ -26,19 +26,13 @@ public class UserService implements UserDetailsService {
     private final PasswordEncoder passwordEncoder;
     
 
-    public UserService(UserRepository userRepository, PasswordEncoder passwordEncoder) {
-		super();
-		this.userRepository = userRepository;
-		this.passwordEncoder = passwordEncoder;
-	}
-
-	@PostConstruct
+    @PostConstruct
     public void initAdminUser() {
         if (userRepository.count() == 0) {
             User admin = new User();
             admin.setUsername("admin");
             admin.setEmail("Admin@gmail.com");
-            admin.setPassword(passwordEncoder.encode("admin123")); // change later!
+            admin.setPassword(passwordEncoder.encode("admin123")); 
             admin.setRole("ADMIN");
             userRepository.save(admin);
         }

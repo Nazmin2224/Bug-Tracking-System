@@ -27,12 +27,7 @@ public class SecurityConfig {
     private final JwtFilter jwtFilter;
     
 
-    public SecurityConfig(JwtFilter jwtFilter) {
-		super();
-		this.jwtFilter = jwtFilter;
-	}
-
-	@Bean
+    @Bean
      SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
                 .cors(withDefaults())

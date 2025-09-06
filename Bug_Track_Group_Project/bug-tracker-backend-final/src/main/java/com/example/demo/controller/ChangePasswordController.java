@@ -15,13 +15,7 @@ public class ChangePasswordController {
     private final PasswordEncoder passwordEncoder;
     
 
-    public ChangePasswordController(UserService userService, PasswordEncoder passwordEncoder) {
-		super();
-		this.userService = userService;
-		this.passwordEncoder = passwordEncoder;
-	}
-
-	@PostMapping("/change-password")
+    @PostMapping("/change-password")
     public String changePassword(@RequestBody ChangePasswordRequest request) {
         User user = userService.getCurrentUser();
 

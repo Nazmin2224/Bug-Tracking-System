@@ -35,14 +35,7 @@ public class ProjectController {
 
     
     
-    public ProjectController(ProjectRepository projectRepository, UserRepository userRepository,
-			UserService userService) {
-		super();
-		this.projectRepository = projectRepository;
-		this.userRepository = userRepository;
-		this.userService = userService;
-	}
-	@GetMapping
+    @GetMapping
     public List<Project> getProjectsByCurrentAdmin() {
         User currentUser = userService.getCurrentUser();
         return projectRepository.findByCreatedBy(currentUser);

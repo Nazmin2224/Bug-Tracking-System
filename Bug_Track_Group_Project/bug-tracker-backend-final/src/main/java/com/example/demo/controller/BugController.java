@@ -30,14 +30,7 @@ public class BugController {
     
     
 
-    public BugController(BugRepository bugRepository, ProjectRepository projectRepository, UserService userService) {
-		super();
-		this.bugRepository = bugRepository;
-		this.projectRepository = projectRepository;
-		this.userService = userService;
-	}
-
-	@GetMapping
+    @GetMapping
     public List<Bug> getAllBugs() {
     	User user = userService.getCurrentUser();
         String role = user.getRole().toUpperCase();
